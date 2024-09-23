@@ -1,0 +1,84 @@
+* {
+    box.sizing: border-box;
+}
+
+.main-container {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black; 
+    display: flex;
+    flex-direction: column;
+
+}
+
+.row-1 {
+    width: 100%;
+    height: 70%;
+    background-color: blue;
+    border-botton: 1px solid black;
+    display: flex;
+    flex-direction: red;
+
+}
+
+
+.row-2 {
+    width: 100%;
+    height: 40%;
+    background-color: orange;
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.cell-c {
+    width: 30%;
+    height: 100%;
+    background-color: pink;
+
+} 
+
+.cell-d {
+    width: 50%;
+    height: 100%;
+    background-color: brown;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+
+}
+
+.cell-e {
+    width: 20%;
+    height: 100%;
+    background-color: aqua;
+
+}
+
+.column-1 {
+    width: 30%;
+    height: 100%;
+    background-color: green;
+   
+
+}
+
+.column-2 {
+    width: 70%;
+    height: 100%;
+    background: red;
+    border-left: 1px solid black;
+
+}
+
+.cell-a {
+    width: 100%;
+    height: 60%;
+    background-color: yellow;
+
+}
+
+.
+
+
