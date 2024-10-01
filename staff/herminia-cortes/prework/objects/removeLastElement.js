@@ -10,7 +10,7 @@ function removeLasElement(object) {
     object.length--
 }
 var numbers = {
-    0: 0,
+    0: 0,,
     1: 1,
     2: 2,
     length: 3

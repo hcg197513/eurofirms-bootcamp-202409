@@ -58,7 +58,7 @@ console.log('numbers despues de añadir 111', numbers)
 
 
 
-console.log('longitud despues de añadir 222', addfirstElement(numbers, 222))
+console.log('longitud despues de añadir 222', addfirstElement(numbers, 222,))
 
 console.log('numbers despues de añadir 222', numbers)
 

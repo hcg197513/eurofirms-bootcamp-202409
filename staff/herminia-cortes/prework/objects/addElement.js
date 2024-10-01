@@ -13,7 +13,7 @@ var numbers = {
     0: 0,
     1: 1,
     2: 2,
-    length: 3
+    lengt
 }
 
 console.log('PRUEBA 1 : añadir el numero 3 a numbers')
@@ -24,8 +24,6 @@ console.log('numbers', numbers)
 
 console.log('resultado esperado -> { '0: 0, 1: 1, 2: 2, 3: 3, length: 4})
 
-addElement(numbers, 100)
-
-console.log('numbers', numbers)
+addElement(numbers, bran
 
 
