@@ -1,9 +1,372 @@
 * {
     box-sizing: border-box;
 
+}
 
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+    height: 100vh;
+}
+
+.header {
+    widhr: 100%;
+    heigth: 20%;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.title {
+    widht: 40%;
+    heigth: 100%;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: center,
+
+}
+
+.navigation {
+    widht: 50%;
+    heigth: 100%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row
+    justify-content: space-between;
+
+}
+
+.form {
+  widht: 100%;
+  heigth: 80%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.search {
+    width: 60%;
+    height: 30%;
+    border: 3px solid black;
+    border-radius: 5%;
+}
+
+.search-botton {
+    widht: 40%;
+    heigth: 100%;
+    border: 3px solid black;
+    border radius: 5%;
+}
+
+.search-container {
+    width: 100%;
+    height: 100%;
+    border: transparent;
+
+}
+
+.logout {
+  widht: 70%;
+  heigth: 70%;
+  border: 3px solid blacj;
+  tex-alig: center;
+
+}
+
+.logout-1 {
+    width: 50%;
+    heigth: 50%;
+    border: 3px solid black;
+    border-radius: 10px;
+
+}
+
+.main {
+    width: 100%;
+    heiht: 100%;
+    border: 3px solid black;
+    border-radius: 5px;
+    display-flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.section-main {
+    width: 70%;
+    height: 50%;
+    border: 1px solid black;
+  
+}
+
+.section-c {
+    widht: 100%;
+    height: 60%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.section-d {
+    widht: 100%;
+    hegth: 100%;
+    border: 1px solid black;
+    border radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.box {
+    width: 60%;
+    height: 40%;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+
+}
+
+.section {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    borde-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.container-article {
+    width: 100%;
+    height: 70%;
+    borde: 3px solid black;
+    display: flex;
+    flex-direction: row;
+    justity-sontent: space-between;
+
+}
+
+.section-a {
+    width: 100%;
+    height: 50%;
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-item: center;
+}
+
+.tex-section {
+    width: 100%;
+    height: 50%;
+    border: 1px solid black;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.section-1 {
+    width: 30%;
+    height: 30vh;
+    border: 1px solid black;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3%;
+
+}
+.section-1a {
+   width: 50%;
+   height: 100%;
+   border: 3px solid black;
+   border-radius: 5px;
+   display: flex; 
+   flex-direction: space-between;
+   gap: 3%;
+
+}
+
+.section-2 {
+   width: 30%,
+   height: 30vh;
+   borde: 3px solid black;
+   display: flex;
+   judtity-content: space-betwee;
+   gap: 3%;
+
+}
+
+.section-3 {
+    width: 30%;
+    heigth: 30vh;
+    border: 3px solid black;
+    border-radius: 5%px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3%;
+
+}
+
+.section-4 {
+    widht: 50%;
+    heigth: 30vh;
+    border: 3px solid black;
+    border-radius: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3%;
+
+}
+
+.section-5 {
+    widht: 50%;
+    heigth: 20vh;
+    border: 1px solid black;
+    border-radius: 5%px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2%;
+
+}
+
+.section-main2 {
+    widht: 40%;
+    heigth: 40%;
+    border: 3px solid black;
+    border-radius:b 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3%; 
+
+}
+
+.video {
+  with: 70%;
+  height: 30vh;
+  border: 1px solid black;
+  border-radius: 5%;
+  align-self: flex-end;
+
+}
+
+.boxof-article-container {
+    width: 100%;
+    height: 100%;
+    border: 3px solid black transparent;
+    borde-radius: 10px;
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.boxof-article {
+    width: 50%;
+    heigth: 100%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+   
+}
+
+.article-1 {
+width: 40%;
+heigth: 40%;
+border: 3px solid black;
+border-radius: 5%;
+
+}
+
+.article-2 {
+    width: 40%;
+    heidht: 40%;
+    border: 3px solid black;
+    border-redius: 5px;
+
+}
+
+.article-3 {
+    width: 40%;
+    height: 40%;
+    border: 3px solid black;
+    border-radius: 5px;
+
+}
+
+.footer  {
+    width: 80%;
+    height: 10%;
+    border: 3px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction row;
+    gap: 3%;
+
+}
+
+.section-footer-a {
+    width: 40%;
+    height: 40%;
+    border: 3px solid black;
+    display: flex;
+    fles-direction. row;
+    justify-content: space-between;
+    gap: 3%;
+
+}
+
+.footer-1 {
+    width: 20%;
+    height: 5%;
+    border: solid transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3;
+
+}
+
+.footer-2 {
+    width: 40%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2%;
+
+}
+
+.footer-3 {
+   width: 30%;
+   height: 20%;
+   border: solid tranparent;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   gap: 3%;
+
+}
+
+.footer-4 {
+    width: 30%;
+    height: 20%;
+    border solid transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 3%;
+
 }
