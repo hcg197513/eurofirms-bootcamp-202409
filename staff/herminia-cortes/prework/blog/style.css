@@ -98,7 +98,7 @@ body {
     width: 70%;
     height: 50%;
     border: 1px solid black;
-  
+
 }
 
 .section-c {
@@ -257,7 +257,8 @@ body {
   height: 30vh;
   border: 1px solid black;
   border-radius: 5%;
-  align-self: flex-end;
+  display: flex;
+  flex-direction; row;
 
 }
 
