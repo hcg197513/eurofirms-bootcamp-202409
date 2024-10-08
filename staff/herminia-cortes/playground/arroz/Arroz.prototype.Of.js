@@ -8,7 +8,7 @@ Arroz.prototype.indexOf = function (searchElement, fromIndex) {
     // else if (fronIndex < 0)
     //     i = this.length + fronIndex
     // else
-    //     i =fronIndex
+    //     i = fronIndex
 
     for (var i = (fromIndex === undefined ? 0 : (fromIndex < 0 ? this.length + fromIndex : fromIndex)); i < this.length; i++) {
     var element = this[i]
