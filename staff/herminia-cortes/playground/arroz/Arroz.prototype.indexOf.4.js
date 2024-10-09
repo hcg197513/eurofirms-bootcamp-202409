@@ -34,7 +34,7 @@ beasts[2] = 'camel'
 beasts[3] = 'duck'
 beasts[4] = 'bison'
 beasts.length = 5
-var index = beasts.indexOf('bison', 2)
+var index = beasts.indexOf('bnison', 2)
 console.log(index);
 // 4
 
