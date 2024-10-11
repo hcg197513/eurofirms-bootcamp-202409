@@ -50,3 +50,37 @@ Arroz {
 */
 console.log(extracted)
 // ´brand: 'Puma', size: 44, price: 50 }
+ 
+
+
+var Arroz = function () {this.length = 0 }
+
+Arroz.prototype.pop = function () {
+    /*
+    extract last element from arroz (reference in  a local variable)
+    delete last element from arroz 
+    decrement arroz length by 1 
+    return extracted element
+    */
+
+    var last = this[this.length -1]
+    delete this[this.length -1]
+    this.length-- // this.lenght =this.length -1
+    return last
+}
+
+console.log ('CASE extract apple from fruits')
+ 
+var casas = new Arroz
+fruits[0] = 'banana'
+fruits[1] = 'peach'
+fruits[2] = 'orange'
+fruits[3] = 'watermelon'
+fruits[4] = 'pineapple'
+fruits[5] = 'apple'
+fruits.length = 6
+var fruits = fruits.pop()
+// Arroz { 0: 'banana', 1: 'peach', 2: 'orange', 3: 'watermelon' 4: 'pineapple', length: 5
+console.log(fruits)
+// apple
+

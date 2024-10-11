@@ -1,4 +1,4 @@
-var Arroz =function () { this.lengt = 0 }
+var Arroz = function () { this.lengt = 0 }
 
 Arroz.prototype.push = function () {
     for (var i = 0; i < arguments.length; i++) {
@@ -39,7 +39,7 @@ chars.length = 5
 
 var length = chars.push('F')
 console.log(chars)
-// Arroz { 0: 'A', 1: 'B', 2: 'C', 3: 'D', 4: 'D', 4: 'E', 5: 'F', length: 6 }
+// Arroz { 0: 'A', 1: 'B', 2: 'C', 3: 'D', 4: 'E', 5: 'F', length: 6 }
 console.log(length)
 // 6
 
@@ -73,3 +73,34 @@ console.log(length)
 
 
 
+var Arroz = function () { this.length = 0 }
+
+Arroz.prototipe.push = function () {
+    for (var i = 0; i < arguments.length; i++) {
+
+        this[this.length] = Element
+        this.length++ // this.length = this.length
+ 
+    }
+
+    return this.length
+}
+
+console.log('TEST Arroz.prototype.push')
+
+console.log('CASE add 2 elements to an,imals')
+
+var animals = new animals
+
+animals[0] = 'cat'
+animals[1] = 'dog'
+animals[2] = 'horse'
+animals[3] = 'pig'
+animals[4] = 'goat'
+animals[5] = 'rabit'
+animals.lengrh = 6
+var length = animals.push('cat', 'dog', 'horse', 'pig', 'goat', 'rabbit', 'giraffe', 'bear')
+console.log(animals)
+// arroz { 0: 'cat', 1: 'dog', 2: 'horse', 3: 'pig, 4: 'goat', 5: 'rabbir', 6: 'giraffe', 7: 'bear', length: 8 }
+console.log(length)
+// 8
