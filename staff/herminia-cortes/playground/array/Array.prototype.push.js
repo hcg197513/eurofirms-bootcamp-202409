@@ -26,3 +26,28 @@ console.log(colors)
 // ['red', 'green', 'blue', 'magenta', 'cyan', 'yellow', 'orange', 'pink']
 console.log(length)
 // 8
+
+
+// ejem exercici:
+
+console.log('TEST Array.prototype.push')
+
+console.log('CASE add 500 to nums')
+
+var nums = [100, 200, 300, 400,]
+var length = nums.push(500)
+console.log(length)
+// [100, 200, 300, 400, 500] (5)
+console.log(length)
+// 5
+
+
+console.log('CASE add many Elements in one call')
+
+var fruits = ['appel', 'orange','watermelon']
+var length = fruits.push('peack','banana')
+console.log(fruits)
+// ['appel', 'orange', 'watermelon', 'peach', 'banana']
+console.log(length)
+// 5
+

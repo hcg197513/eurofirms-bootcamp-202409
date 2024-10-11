@@ -1,4 +1,4 @@
-console.log('TEST Arrey.prototype.indexOf')
+console.log('TEST Array.prototype.indexOf')
 
 console.log('CASE get index of bison')
 
@@ -41,3 +41,21 @@ var beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
 var index = beasts.indexOf('bison', -3)
 console.log(index);
 // 4
+
+
+// ejem exercici:
+
+console.log('TEST Array.prototype.indexOf')
+
+console.log('CASE get index of cat')
+
+var animals = ['bison', 'camel', 'cat', 'duck', 'cat']
+var index = animals.indexOf('cat')
+console.log(index);
+// 2
+
+
+
+
+
+

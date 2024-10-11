@@ -1,13 +1,13 @@
-console.log('TEST rray, prototype.pop')
+console.log('TEST Array.prototype.pop')
 
 console.log('CASE extract tomato from plants')
 
 var plants = ['brocoli', 'cauliflower', 'cabbage', 'kale', 'toamato']
 var plant = plants.pop()
 console.log(plants)
-// ['brocoli', 'cauliflower', 'cabbage', kale]
+// ['brocoli', 'cauliflower', 'cabbage', 'kale']
 console.log(plant)
-//tomato  
+// tomato  
 
 console.log('CASE extrac last item from cart')
 
@@ -25,3 +25,17 @@ console.log(cart)
 */
 console.log(extracted)
 // { brand: 'Puma', size: 44, price: 50 }
+
+
+// ejem exercici:
+
+console.log('TEST Array.prototype.push')
+
+console.log('CASE extrac banana from fruits')
+
+var fruits = ['orange', 'peach', 'appel', 'banana']
+var fruits = fruits.pop()
+console.log(fruits)
+//['orange', 'peach', 'appel']
+// 'banana'
+
