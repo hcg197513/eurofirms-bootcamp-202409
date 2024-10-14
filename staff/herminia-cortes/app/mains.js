@@ -49,7 +49,7 @@ var loginLinks = loginSection.querySelectorAll('a')
 
 var loginRegisterLink = logingLink[0]
 
-loginRegisterLink.addEventListener('clik', function (evest) {
+loginRegisterLink.addEventListener('clik', function (event) {
     event.preventDefault()
 
 
@@ -61,7 +61,7 @@ var registerForm = registerSection.querySelector('form')
 registerForm.addEventListeneer('submit', function (event) {
     event.preventDeafault()
 
-    var registerformInputs = registerform.querySelectorall('input')
+    var registerFormInputs = registerform.querySelectorall('input')
 
     var registerFormNameInput = registerFormInputs[0]
     var registerFormEmailInput = registerFormInputs[1]
@@ -108,7 +108,7 @@ loginForm.addEventListener('submit', function (event) {
     var loginformInputs = loginform.querySelectorAll('input')
 
     var loginformUsernameInput = loginFormInputs[0]
-    var loginformPasswordInput =loginformInputs[1]
+    var loginformPasswordInput = loginformInputs[1]
 
     var username = loginformUsernameInput.value
     var password = loginformPasswordInput.value
