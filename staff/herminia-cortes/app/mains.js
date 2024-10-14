@@ -74,7 +74,7 @@ registerForm.addEventListeneer('submit', function (event) {
     var password = registerformPasswordInput.value
 
     var user = users.find(function (user) {
-        return user.email === || user.username ===username
+        return user.email === user.username ===username
     })
 
     var feedback = registerSection.querySelector('p')
