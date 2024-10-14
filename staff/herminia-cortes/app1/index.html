@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>App</title>
 </head>
-
-<body>
+    
+</body>
     <h1>App</h1>
 
     <section>
-        <h2>Welcom!</h2>
+        <h2>welcome!</h2>
 
-        <p>please, <a href="">Register</a> or <a href="">Login</a>.</p>
+        <p>Plese, <a href="">Reister</a> or <a href="">Login</a>.</p>
     </section>
 
     <section>
@@ -23,7 +23,7 @@
             <label for="name">Name</label>
             <input type="text" id="name">
 
-            <label for="email">E-mail</label>
+            <label for="email">E-mal</label>
             <input type="email" id="email">
 
             <label for="username">Username</label>
@@ -32,25 +32,25 @@
             <label for="password">Password</label>
             <input type="password" id="password">
 
-            <buton type="submit">Register</buton>
+            <button type="submit">Register</button>
         </form>
-        
+
         <p>Error ...</p>
 
-        <a href=""></a>
+        <a href="">Login</a>
     </section>
-
+    
     <section>
         <h2>Login</h2>
 
         <form>
             <label for="username">Username</label>
-            <input type="text" id="username">
+            <input type="tex" id="username">
 
             <label for="password">Password</label>
-            <input type="password" id="password">
+            <input type="submit" id="password">
 
-            <button type="submit">login</button>
+            <button type="submit">Login</button>
         </form>
 
         <p>Error ...</p>
@@ -64,36 +64,36 @@
         <p>Hello, User!</p>
 
         <button>Logout</button>
-    </section>
-
+     </section>  
+     
     <script>
         var users = []
 
         var sections = document.querySelectorAll('section')
 
-        var welcomeSection = sections [0]
-        var registerSection = sections[1]
-        var loginSection = sections[2]
-        varhomeSection =sections[3]
+        var welcomeSection = sections[0] 
+        var registerSection = sections[1] 
+        var loginSection = sections[2] 
+        var homeSection = sections[3] 
 
-        registerSection.Style.display = 'none'
+        registerSection.style.display = 'none'
         loginSection.style.display = 'none'
-        homeSection.Style.Display = 'none'
+        homeSection.style.display = 'none'
 
         var welcomeLinks = welcomeSection.querySelectorAll('a')
 
-        var welcomeRegisterLink = welcomeLinks[0]
-        var welcomeLoginLink = welcomeLink[1]
+        var WelcomeRegisterLink = welcomeLinks[0] 
+        var welcomeLoginLink = welcomeLinks[1] 
 
-        welcomeRegisterLink.assEventListener('click', function (event) {
-            event.preventDefault()
+        welcomeRegisterLink.addEventListener('clic', function (event) {
+            event.preventDefaul()
 
-            welcomeSection.style.display = 'none'
-            resterSection.style.display = ''
+            welcomrsection.style.display = 'none'
+            registerSection.style.display = ''
         })
 
-        welcomeLoginLink.addEventListener('click', function (event) {
-            event.preventDefault()
+        welcomrLoginLink.addEventListener('clic', function (event)  {
+            event.preventDefaul()
 
             welcomeSection.style.display = 'none'
             loginSection.style.display = ''
@@ -101,55 +101,55 @@
 
         var registerLinks = registerSection.querySelectorAll('a')
 
-        var registerLoginLink = registerLinks[0]
+        var registerLoginLink = registerLinks[0] 
 
         registerLoginLink.addEventListener('click', function (event) {
             event.preventDefault()
 
-            registerSection.style.display = 'none'
+            registersection.style.display = 'none'
             loginSection.style.display = ''
         })
 
         var loginLinks = loginSection.querySelectorAll('a')
 
-        var loginRegisterLink = loginLinks[0]
+        var loginRegisterLink = loginLins[0] 
 
         loginRegisterLink.addEventListener('click', function (event) {
-            event.preventDefault()
+            event.preventDeafult()
 
-            loginsection.style.display = 'none'
+            loginSection.style.display = 'none'
             registerSection.style.display = ''
         })
-        
+
         var registerForm = registerSection.querySelector('form')
 
-        registerForm.addEventListener('submit', function (event ){
+        registerForm.addEventListener('submit', function (event) {
             event.preventDefault()
 
-            var registerformImputs = registerForm.querySelectorAll('imput')
+            var registeFormInputs = registerForm.querySelectorAll('input')
 
-            var registeFormNameImput = registerFormInputs[0]
-            var registerFormEmailImput = registerForinputs[1]
-            var registerFormUsernameImput = registerFormInputs[2]
-            var registerformPasswordImput = registerformInput[3]
+            var registerformNameInput = registerFormInputs[0] 
+            var registerFormEmailInput = registerFormInputs[1] 
+            var registerFormUsernameInput = registerFormInputs[2] 
+            var registerFormPasswordInput = registerFormInputs[3] 
 
-            var name = registerFormNameInput.value
-            var email = registerFormEmailInput.value
-            var username = registerformUsernameImput.value
-            var password = registerformpasswordInput.value
+            var name = registerFormNameInput.value 
+            var email = registerFormEmailInput.value 
+            var username = registerformUsernameInput.value 
+            var password = registerFormUsernameInput.value 
 
             var user = {}
             user.name = name
             user.email = email
-            user.username = username
+            user.useraname = username
             user.password = password
 
-            user.push(use)
+            users.push(user) 
 
-            registerForm.reset()
+            registerform.reset()
 
             registerSection.style.display = 'none'
-            loginsection.style.display = ''
+            loginSection.style.display = ''
         })
     </script>
 </body>
