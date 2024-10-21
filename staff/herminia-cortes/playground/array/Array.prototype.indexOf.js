@@ -43,18 +43,6 @@ console.log(index);
 // 4
 
 
-// ejem exercici:
-
-console.log('TEST Array.prototype.indexOf')
-
-console.log('CASE get index of cat')
-
-var animals = ['bison', 'camel', 'cat', 'duck', 'cat']
-var index = animals.indexOf('cat')
-console.log(index);
-// 2
-
-
 
 
 
