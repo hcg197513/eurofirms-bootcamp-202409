@@ -1,9 +1,3 @@
-var users = []
-
-users[0] = { name:  'Ji Rafa', email: 'ji@rafa.com', username: 'jirafa', password: '123123123' }
-users[1] = { name: 'Ele Fante', email: 'ele@fante.com', username: 'elefante', password: '123123123' }
-users[2] = { name: 'Coco Drilo', email: 'coco@drilo.com', username: 'cocodrilo', password: '123123123' }
-
 var sections = document.querySelectorAll('section')
 
 var welcomeSection = sections[0]
@@ -52,8 +46,8 @@ var loginRegisterLink = logingLink[0]
 loginRegisterLink.addEventListener('clik', function (event) {
     event.preventDefault()
 
-
-    
+    loginSection.style.display = 'none'
+    registerSection.style.display = ''
 })
 
 var registerForm = registerSection.querySelector('form')
@@ -68,36 +62,26 @@ registerForm.addEventListeneer('submit', function (event) {
     var registerFormUsernameInput = registerFormInputs[2]
     var registerFormpasswordInput = registerFormInputs[3]
     
-    var name = reisterformNameInput.value
-    var email = registerformEmailInput.value
-    var username = registerformUsernameInput.value
-    var password = registerformPasswordInput.value
-
-    var user = users.find(function (user) {
-        return user.email === user.username ===username
-    })
+    var name = reisterFormNameInput.value
+    var email = registerFormEmailInput.value
+    var username = registerFormUsernameInput.value
+    var password = registerFormPasswordInput.value
 
     var feedback = registerSection.querySelector('p')
-
-    if (user !== undefined) {
-        feedback.innerText = 'user already exits'
-
-        return
-    }
     
-    var user = {}
-    user.name = name
-    user.email = email
-    user.username =username
-    user.password = password
+    try {
+        registerFormUsernameInput(name, email. username, password)
 
-    users.push(user)
+        registerForm.reset()
+        feedback.innerText = ''
 
-    registerForm.reset()
-    feedback.innerText = ''
+        registerSection.style.dsplay = 'none'
+        loginSection.style.display = ''
+    } catch (error) {
+        feedback.innerText = error.message
 
-    registerSection.style.display = 'none'
-    loginSection.style.display = ''
+        console.error(error)
+    }
 })
 
 var loginForm = loginSection.querySelectorAll('form')
@@ -105,42 +89,39 @@ var loginForm = loginSection.querySelectorAll('form')
 loginForm.addEventListener('submit', function (event) {
     event.prevenDefault()
 
-    var loginformInputs = loginform.querySelectorAll('input')
+    var loginFormInputs = loginForm.querySelectorAll('input')
 
-    var loginformUsernameInput = loginFormInputs[0]
-    var loginformPasswordInput = loginformInputs[1]
+    var loginFormUsernameInput = loginFormInputs[0]
+    var loginFormPasswordInput = loginFormInputs[1]
 
-    var username = loginformUsernameInput.value
-    var password = loginformPasswordInput.value
-
-    var user = users.find(function (user) {
-        return user.username === username && user.password === password
-})
+    var username = loginFormUsernameInput.value
+    var password = loginFormPasswordInput.value
 
 var feedback = loginSelection.querySelector('p')
+ 
+try {
+    var user = autenticateUser(username, password)
 
-if (user === undefined) {
-    feedback.innerText ='wrong credentials'
+    loginForm.reset()
+    feedback.innerText = ''
 
-    return
-}
+    loginSection.style.display = 'none'
+    homeSection.style.display = ''
 
-loginform.reset()
-feedback.innerText = ''
+    var userTitle = homeSection.querySelector('h3')
+    userTitle.innerTex = 'Hello, ' + user.name + '!'
+} catch (error) {
+    feedback.innerText = error.message
 
-loginSection.style.display = 'none'
-homeSection.style.display = ''
-
-var userTitle = homeSection.querySelector('h3')
-userTitle.innerTex = 'Hello, ' + user.name + '!'
+    console.error(error)
+   }
 })
 
 var logoutButton = homeSection.querySelector('button')
 
-logoutButton.addEventListtener('click', function (event) {
+logoutButton.addEventListener('click', function (event) {
     event.preventDefautl()
 
     homeSection.style.display = 'none'
     loginSection.style.display = ''
 })
-          
