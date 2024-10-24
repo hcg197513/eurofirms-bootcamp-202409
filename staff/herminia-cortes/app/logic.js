@@ -14,7 +14,7 @@ function authenticateUser(username, password) {
     return user
 }
 
-function registerUser(name, email, username) {
+function registerUser(name, email, username, password) {
     if (typeof name !== 'string') throw new Error('invalid name')
     if (name.length < 1 ) throw new Error('invalid name length')
 
